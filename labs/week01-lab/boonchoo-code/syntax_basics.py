@@ -7,7 +7,7 @@ Learn about variables, data types, and basic Python syntax.
 # Create variables for the following information about yourself:
 name = "Ratthaphon Khan"  # Replace with your actual name
 age = 19  # Replace with your actual age
-height = 5.8  # Replace with your height in feet
+height = 6  # Replace with your height in feet
 is_student = True  # True or False
 
 # Print all variables
