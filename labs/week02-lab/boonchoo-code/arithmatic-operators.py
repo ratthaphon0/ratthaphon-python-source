@@ -8,9 +8,9 @@ print("=" * 50)
 
 a = 15
 b = 4
-
-print(f"a = {a}, b = {b}")
-print()
+ 
+print(f"a = {a}, b = {b}") 
+#or print("a = ",a,",b = ",b)
 
 # Addition (+)
 result_add = a + b
@@ -57,7 +57,7 @@ num2 = float(input("Enter second number: "))
 print(f"\nCalculations with {num1} and {num2}:")
 print(f"{num1} + {num2} = {num1 + num2}")
 print(f"{num1} - {num2} = {num1 - num2}")
-print(f"{num1} * {num2} = {num1 * num2}")
+print(f"{num1} * {num2} = {num1 * num2}") 
 
 # ตรวจสอบการหารด้วยศูนย์
 if num2 != 0:

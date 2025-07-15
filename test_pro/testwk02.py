@@ -1,0 +1,33 @@
+print("=" * 50)
+print("PRACTICE EXERCISES")
+print("=" * 50)
+
+print("Now try these exercises:")
+print()
+print("1. Circle Calculator:")
+print("   - Ask user for radius")
+print("   - Calculate area (π * r²)")
+print("   - Calculate circumference (2 * π * r)")
+print("   - Use 3.14159 for π")
+print()
+
+print("2. Time Converter:")
+print("   - Ask user for seconds")
+print("   - Convert to hours, minutes, and remaining seconds")
+print("   - Example: 3661 seconds = 1 hour, 1 minute, 1 second")
+print()
+
+print("3. Compound Interest Calculator:")
+print("   - Ask for principal, rate, and time")
+print("   - Calculate: A = P * (1 + r/100) ** t")
+print()
+
+print("4. BMI Calculator:")
+print("   - Ask for weight (kg) and height (m)")
+print("   - Calculate: BMI = weight / (height ** 2)")
+print()
+
+print("5. Grade Average:")
+print("   - Ask for 3 test scores")
+print("   - Calculate average")
+print("   - Show how many points needed for next letter grade")
