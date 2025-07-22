@@ -14,5 +14,7 @@ elif age > 12 and age <= 19 :
     print(f"{age} years old is Teenager")
 elif age > 19 and age <= 59 :
     print(f"{age} years old is Adult") 
-else :
+elif age > 59 and age < 200 :
     print(f"{age} years old is Senior")
+else :
+    print("Input Invalid")

@@ -4,7 +4,9 @@ Student: Ratthaphon Khan
 Date: 22/07/2568
 Purpose: Calculate monthly budget and savings
 """
-def get_user_input():
+
+#function to get income and outcome from user
+def get_user_input(): 
     monthly_income = float(input("User's monthly income in THB : "))
     rent_cost = float(input("Monthly rent/housing cost : "))
     food_budget = int(input("Monthly food budget in THB : "))
@@ -14,22 +16,23 @@ def get_user_input():
     investment_percent = float(input("Percentage to invest (e.g., 15.0) : "))
     return monthly_income, rent_cost, food_budget, transportation_cost, entertainment_budget, emergency_fund_percent,investment_percent
 
-def total_fixed_expenses(rent_cost,transportation_cost):
+#function to calculate total fixed expenses per month
+def total_fixed_expenses(rent_cost,transportation_cost): 
     return rent_cost + transportation_cost
 
-
+#function to calculate total variable expenses per month 
 def total_variable_expenses(food_budget,entertainment_budget):
     return food_budget + entertainment_budget
 
-    
+#function to calculate total expenses (fixed + variable) per month    
 def total_expenses(total_fixed_expenses,total_variable_expenses):
     return total_fixed_expenses + total_variable_expenses
 
-    
+#function to calculate remaining income after subtract total expenses
 def remaining_income(monthly_income,total_expenses):
     return monthly_income - total_expenses
 
-
+#function to calculate emergency and investment fund per month then will tell remaining money for saving
 def calculate_savings(monthly_income,emergency_fund_percent,investment_percent,remaining):
     emergency = monthly_income * (emergency_fund_percent / 100)
     investment = monthly_income * (investment_percent / 100)
