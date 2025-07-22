@@ -42,6 +42,9 @@ if entered_pin == pin:
             print("-" * 50)
         elif choice == "4" : 
             break
+        else :
+            print("Input Invalid")
+            continue
                     
 else:
     print("Invalid PIN")
