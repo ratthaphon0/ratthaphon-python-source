@@ -34,25 +34,27 @@ def remaining_income(monthly_income,total_expenses):
 
 #function to calculate emergency and investment fund per month then will tell remaining money for saving
 def calculate_savings(monthly_income,emergency_fund_percent,investment_percent,remaining):
-    emergency = monthly_income * (emergency_fund_percent / 100)
-    investment = monthly_income * (investment_percent / 100)
-    available = remaining - emergency - investment
+    emergency = monthly_income * (emergency_fund_percent / 100) #calculate emergency fund from user emergency percentage given
+    investment = monthly_income * (investment_percent / 100)#calculate investment fund from user investment percentage given
+    available = remaining - emergency - investment #calculate available money after deducted emergency and investment fund
     return emergency, investment, available
 
+#function to calculate expense ratio
+def expense_ratio(total_exp,monthly_income):
+    return (total_exp / monthly_income) * 100
     
-def expense_ratio(total_expenses,monthly_income):
-    expense_ratio = (total_expenses / monthly_income) * 100
-    return expense_ratio
-    
-    
+#main function
 def main():
+    #call function and store values in each variable
     monthly_income, rent_cost, food_budget, transportation_cost, entertainment_budget, emergency_fund_percent,investment_percent = get_user_input()
     fixed = total_fixed_expenses(rent_cost,transportation_cost)
     variable = total_variable_expenses(food_budget, entertainment_budget)
     total_exp = total_expenses(fixed, variable)
     remaining = remaining_income(monthly_income, total_exp)
     emergency, investment, available = calculate_savings(monthly_income,emergency_fund_percent,investment_percent,remaining)
+    expense_rat = expense_ratio(total_exp,monthly_income)
     
+    #display to user
     print("=== MONTHLY BUDGET REPORT ===")
     print(f"\nIncome: {monthly_income:.2f} THB")
     print(f"Fixed Expenses: {fixed:.2f} THB")
@@ -63,5 +65,8 @@ def main():
     print(f"Emergency Fund ({emergency_fund_percent}): {emergency:.2f} THB")
     print(f"Investment ({investment_percent}): {investment:.2f} THB")
     print(f"Available for Savings: {available:.2f} THB")
+    print("\n=== ANALYSIS ===")
+    print(f"Expense Ratio: {expense_rat:.2f}%")   
     
+#call function main
 main()
