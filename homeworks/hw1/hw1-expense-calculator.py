@@ -5,7 +5,7 @@ Date: 22/07/2568
 Purpose: Calculate monthly budget and savings
 """
 
-#function to get income and outcome from user
+#function to get income and expense from user
 def get_user_input(): 
     monthly_income = float(input("User's monthly income in THB : "))
     rent_cost = float(input("Monthly rent/housing cost : "))
