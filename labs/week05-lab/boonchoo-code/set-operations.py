@@ -20,7 +20,7 @@ print(f"After removing banana: {fruits}")
 fruits.discard("pineapple")  # No error if not found
 print(f"After discarding pineapple: {fruits}")
 
-removed_fruit = fruits.pop()  # Remove arbitrary element
+removed_fruit = fruits.pop()  # Remove arbitrary element(random)
 print(f"Removed: {removed_fruit}")
 print(f"Remaining fruits: {fruits}")
 

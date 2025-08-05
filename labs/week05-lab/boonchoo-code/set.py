@@ -13,7 +13,9 @@ print(f"Original list: {list_with_duplicates}")
 print(f"Set (unique): {unique_numbers}")
 
 # Set from string
-char_set = set("hello")
+char_set = set("hello")     #{'h', 'e', 'l', 'o'}
+char_list = list("hello")   #['h', 'e', 'l', 'l', 'o']
+char_tuple = tuple("hello") #('h', 'e', 'l', 'l', 'o')
 print(f"Characters in 'hello': {char_set}")
 
 # Set comprehension

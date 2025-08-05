@@ -46,13 +46,13 @@ inventory["strawberries"] = 15
 print(f"After adding items: {inventory}")
 
 # Updating existing items
-inventory["apples"] = 45  # Reduce apple count
-inventory["bananas"] += 20  # Add more bananas
+inventory["apples"] = 45  # Reduce apple count(already exist, so it edit value)
+inventory["bananas"] += 20  # Add more bananas(add 20 more)
 print(f"After updates: {inventory}")
 
 # Using update() method
-new_items = {"mangoes": 35, "pineapples": 10}
-inventory.update(new_items)
+new_items = {"mangoes": 35, "pineapples": 10} 
+inventory.update(new_items) #if already exist it will update the value but if no it will add new item
 print(f"After bulk update: {inventory}")
 
 # Update with another syntax
@@ -67,7 +67,7 @@ del inventory["pineapples"]  # Remove without returning
 print(f"After deletions: {inventory}")
 
 # Remove last item (Python 3.7+)
-last_item = inventory.popitem()
+last_item = inventory.popitem() #pop("ชื่อ") #popitem() ลบตัวท้าย
 print(f"Last item removed: {last_item}")
 
 # Clear all items

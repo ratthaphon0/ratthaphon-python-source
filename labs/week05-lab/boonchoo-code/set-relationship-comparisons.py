@@ -16,7 +16,7 @@ print(f"Are all animals superset of pets? {all_animals.issuperset(pets)}")
 # Disjoint sets (no common elements)
 birds = {"eagle", "sparrow", "parrot"}
 print(f"Birds: {birds}")
-print(f"Are mammals and birds disjoint? {mammals.isdisjoint(birds)}")
+print(f"Are mammals and birds disjoint? {mammals.isdisjoint(birds)}")#ไม่มีสักตัวที่เหมือนกัน (isdisjoint)
 print(f"Are pets and small_pets disjoint? {pets.isdisjoint(small_pets)}")
 
 # Set equality

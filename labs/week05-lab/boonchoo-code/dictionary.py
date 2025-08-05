@@ -4,7 +4,7 @@ another_empty_dict = dict()
 
 # Dictionary with initial values
 student = {
-    "name": "Alice Smith",
+    "name": "Alice Smith",#key และ data, key ไม่ซ้ำ
     "age": 20,
     "major": "Computer Science",
     "gpa": 3.8
