@@ -5,15 +5,9 @@ Learn about variables, data types, and basic Python syntax.
 
 # Exercise 1: Variables and Assignment
 # Create variables for the following information about yourself:
-<<<<<<< HEAD
 name = "Ratthaphon Khan"  # Replace with your actual name
 age = 19  # Replace with your actual age
-height = 6  # Replace with your height in feet
-=======
-name = "Your Name Here"  # Replace with your actual name
-age = 20  # Replace with your actual age
-height = 5.8  # Replace with your height in feet
->>>>>>> upstream/main
+height = 6.5# Replace with your height in feet
 is_student = True  # True or False
 
 # Print all variables
@@ -37,9 +31,9 @@ print("Type of my_boolean:", type(my_boolean))
 
 # Exercise 3: String Operations
 first_name = "John"
-last_name = "Doe"
+last_name = "Dick"
 
-# Concatenate strings
+# Concatenate strings 
 full_name = first_name + " " + last_name
 print("Full name:", full_name)
 
@@ -50,19 +44,13 @@ print("Length of full name:", len(full_name))
 # Create two numbers and perform basic operations
 num1 = 10
 num2 = 3
-
 print("Addition:", num1 + num2)
 print("Subtraction:", num1 - num2)
 print("Multiplication:", num1 * num2)
 print("Division:", num1 / num2)
 print("Integer Division:", num1 // num2)
 print("Remainder (Modulo):", num1 % num2)
-<<<<<<< HEAD
 print("Power:", num1 ** num2) 
-=======
-print("Power:", num1 ** num2)
->>>>>>> upstream/main
-
 # Exercise 5: Variable Reassignment
 # Start with a variable and change its value
 counter = 0
@@ -73,7 +61,8 @@ print("After increment:", counter)
 
 counter = counter + 5
 print("After adding 5:", counter)
-
+x = 0
+y = 5
 # Exercise 6: Multiple Assignment
 # Assign multiple variables in one line
 x, y, z = 1, 2, 3
@@ -84,41 +73,21 @@ a = b = c = 10
 print("a =", a, "b =", b, "c =", c)
 
 # Exercise 7: Practice with Different Data Types
-<<<<<<< HEAD
 # Complete the following assignments: 
 # String variable containing your favorite color
-favorite_color = "black"
+favorite_color = "Yellow"
 
 # Integer variable with the current year
-current_year = 2025
+current_year = 2568
 
 # Float variable with your favorite number (with decimal)
-favorite_number = 9.99
+favorite_number = 15.6
 
 # Boolean variable indicating if you like pizza
 likes_pizza = True
-=======
-# Complete the following assignments:
-
-# String variable containing your favorite color
-favorite_color = 
-
-# Integer variable with the current year
-current_year = 
-
-# Float variable with your favorite number (with decimal)
-favorite_number = 
-
-# Boolean variable indicating if you like pizza
-likes_pizza = 
->>>>>>> upstream/main
 
 # Print all variables with descriptive messages
 print("My favorite color is:", favorite_color)
 print("The current year is:", current_year)
 print("My favorite number is:", favorite_number)
-<<<<<<< HEAD
 print("Do I like pizza?", likes_pizza) 
-=======
-print("Do I like pizza?", likes_pizza)
->>>>>>> upstream/main

@@ -16,6 +16,7 @@ print(f"x: {x}, y: {y}")                # x: 10, y: 20
 
 # Multiple assignment using tuples
 person = ("Alice", 25, "Engineer")
+person = list(person)
 name, age, job = person
 print(f"Name: {name}, Age: {age}, Job: {job}")
 

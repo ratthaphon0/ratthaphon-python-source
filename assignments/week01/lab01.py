@@ -9,16 +9,15 @@ print("=== Personal Profile Creator ===")
 # Then display it as a profile
 
 # Write your solution here:
-full_name = input("What is your full name? : ")
-age = input("How old are you? : ")
-email = input("What is your email address? : ")
-phone_number = input("What is your phone number? : ")
-hobby = input("What is your favorite hobby? : ")
+Name = input("What is your name")
+Age = int(input("How old are you"))
+Email = input("what is your email")
+Phone = int(input("Your phone number"))
+hobby = input("what is favorite hobby")
+print("Name : ",Name)
+print("Age : ",Age)
+print("Email :",Email)
+print("Phone number : ",Phone)
+print("favorite hobby : ",hobby)
 
-print("== Your profile ==")
-print("Full name : " + full_name)
-print("Age : " , age)
-print("Email : " , email)
-print("Phone no : " , phone_number)
-print("Favorite hobby : " , hobby)
- 
+

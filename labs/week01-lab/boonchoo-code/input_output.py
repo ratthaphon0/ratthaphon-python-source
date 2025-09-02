@@ -13,6 +13,7 @@ age = int(age_string)  # Convert string to integer
 print("You are", age, "years old")
 print("Next year you will be", age + 1, "years old")
 
+
 # Exercise 3: Multiple Inputs
 print("\n=== Exercise 3: Multiple Inputs ===")
 first_name = input("Enter your first name: ")
@@ -29,12 +30,16 @@ print("Calculated age:", calculated_age)
 print("\n=== Exercise 4: Print Formatting ===")
 name = "Alice"
 score = 95
+score_1 = 10.5
 subject = "Math"
 
 # Different ways to print the same information
 print("Student:", name, "Score:", score, "Subject:", subject)
 print("Student: " + name + " Score: " + str(score) + " Subject: " + subject)
 print("Student:", name, "scored", score, "in", subject)
+print(score + score)
+print(float(score) ,  "score_1")
+print(int(score_1))
 
 # Exercise 5: Input Validation Practice
 print("\n=== Exercise 5: Your Turn ===")
@@ -62,28 +67,26 @@ print("\n=== Exercise 6: Personal Information ===")
 # Then display all information in a nice format
 
 # Write your code here:
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
-color = input("Enter your favorite color: ")
-hometown = input("Enter your hometown: ")
-
-print("\n--- Your Information ---")
-print("Name:", name)
-print("Age:", age)
-print("Favorite Color:", color)
-print("Hometown:", hometown)
-print("Thank you for sharing!")
-
+name = input("What is your Name")
+age = int (input("How old are you"))
+favorite = input("what color do you like")
+hometown = input("Your hometown")
+print("Name",name, "Age",age, "Favorite",favorite, "Hometown",hometown)
 # Exercise 7: Simple Calculator
 print("\n=== Exercise 7: Simple Calculator ===")
 # Ask user for two numbers and an operation
 # Display the result
 
+
+
+
+
+
+
 print("Simple Calculator")
 number1 = float(input("Enter first number: "))
 number2 = float(input("Enter second number: "))
 operation = input("Enter operation (+, -, *, /): ")
-
 if operation == "+":
     result = number1 + number2
 elif operation == "-":
@@ -103,8 +106,8 @@ print("\n=== Exercise 8: Practice Problems ===")
 # Problem 1: Ask for user's name and age, then calculate birth year
 user_name = input("What's your name? ")
 user_age = int(input("How old are you? "))
-birth_year = 2024 - user_age
-print(user_name + ", you were born in approximately", birth_year)
+birth_year = 2025 - user_age
+print(user_name + ", you were born in approximately" ,birth_year)
 
 # Problem 2: Convert temperature from Celsius to Fahrenheit
 celsius = float(input("Enter temperature in Celsius: "))
@@ -112,7 +115,7 @@ fahrenheit = (celsius * 9/5) + 32
 print(celsius, "degrees Celsius is", fahrenheit, "degrees Fahrenheit")
 
 # Problem 3: Calculate rectangle area
-length = float(input("Enter rectangle length: "))
-width = float(input("Enter rectangle width: "))
-area = length * width
-print("The area of a rectangle with length", length, "and width", width, "is", area)
+kuy = float(input("enter ความกว้าง"))
+olo = float(input("enter ความยาว"))
+you = kuy * olo
+print(kuy ,"* " + str(olo) + " =" , you)

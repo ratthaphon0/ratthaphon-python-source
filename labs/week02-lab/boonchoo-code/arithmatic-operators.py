@@ -9,7 +9,8 @@ print("=" * 50)
 a = 15
 b = 4
  
-print(f"a = {a}, b = {b}") 
+print(f"a = {type(a)}, b = {type(b)}") 
+print(f"a = {a}, b = {b}")
 #or print("a = ",a,",b = ",b)
 
 # Addition (+)
@@ -23,6 +24,8 @@ print(f"Subtraction:    {a} - {b} = {result_sub}")
 # Multiplication (*)
 result_mul = a * b
 print(f"Multiplication: {a} * {b} = {result_mul}")
+print("a * b = ", a * b)
+print(f"{a} * {b} = ", a*b)
 
 # Division (/)
 result_div = a / b
@@ -153,7 +156,7 @@ tip_amount = total_bill * (tip_percent / 100)
 total_with_tip = total_bill + tip_amount
 amount_per_person = total_with_tip / num_people
 
-print(f"\nBill Breakdown:")
+print("\nBill Breakdown:")
 print(f"Original bill: ${total_bill}")
 print(f"Tip ({tip_percent}%): ${tip_amount:.2f}")
 print(f"Total with tip: ${total_with_tip:.2f}")

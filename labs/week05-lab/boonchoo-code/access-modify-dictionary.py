@@ -8,7 +8,8 @@ student = {
 
 # Accessing values by key
 print(f"Name: {student['name']}")           # Alice Smith
-print(f"Age: {student['age']}")             # 20
+print(f"Age: {student['age']}") # 20
+
 
 # Using get() method (safer)
 print(f"Major: {student.get('major')}")     # Computer Science
@@ -21,6 +22,7 @@ print(f"First course: {student['courses'][0]}")  # Python
 # Check if key exists
 if 'gpa' in student:
     print(f"GPA: {student['gpa']}")
+
 
 # Get all keys, values, and items
 print(f"Keys: {list(student.keys())}")

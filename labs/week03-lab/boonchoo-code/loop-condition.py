@@ -20,8 +20,8 @@ for i in range(0, 11, 2):  # 0, 2, 4, 6, 8, 10
 
 print("\nLoop ผ่าน string:")
 name = "Python"
-for letter in name:
-    print(f"ตัวอักษร: {letter}")
+for i in name:
+    print(f"ตัวอักษร: {i}")
 
 print("\nLoop ผ่าน list:")
 fruits = ["apple", "banana", "orange"]
@@ -71,7 +71,7 @@ for num in range(1, 11):
 print("\nDemo เกมทายตัวเลข (จำลอง):")
 import random
 secret_number = 7  # ใช้เลขตายตัวเพื่อ demo
-guesses = [5, 8, 7]  # จำลองการทาย
+guesses = [5, 8 ,4,3, 7]  # จำลองการทาย
 attempts = 0
 max_attempts = 3
 
@@ -90,6 +90,7 @@ for guess in guesses:
     
     if attempts == max_attempts:
         print(f"หมดโอกาส! คำตอบคือ {secret_number}")
+        break 
 
 print("=" * 50)
 
@@ -168,7 +169,7 @@ numbers = [(10, 5), (8, 4), (0, 0)]  # จำลองข้อมูล
 
 choice_index = 0
 for choice in menu_choices:
-    print(f"\n--- เมนู ---")
+    print("\n--- เมนู ---")
     print("1. บวก")
     print("2. ลบ")
     print("3. คูณ")
@@ -238,7 +239,7 @@ for score in scores:
 average = total_score / num_students
 
 # แสดงผลลัพธ์
-print(f"\n=== สรุปผลการสอบ ===")
+print("\n=== สรุปผลการสอบ ===")
 print(f"จำนวนนักเรียน: {num_students} คน")
 print(f"คะแนนเฉลี่ย: {average:.2f}")
 print(f"คะแนนสูงสุด: {highest_score}")
