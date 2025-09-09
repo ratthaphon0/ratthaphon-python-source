@@ -1,3 +1,4 @@
+
 class ClassName:
     """Class docstring"""
     

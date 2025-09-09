@@ -16,7 +16,7 @@ class Student:
         self.courses.append(course)
         return f"{course} added successfully!"
     
-    def show_courses(self):
+    def show_courses(self): 
         """Method to display all courses"""
         if self.courses:
             return f"Courses: {', '.join(self.courses)}"
