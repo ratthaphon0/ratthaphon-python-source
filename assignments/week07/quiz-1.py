@@ -4,7 +4,6 @@
     - มี method ชื่อ get_area() ที่คืนค่าพื้นที่ของสี่เหลี่ยม
     - มี method ชื่อ get_perimeter() ที่คืนค่ารอบรูปของสี่เหลี่ยม
 """
-
 class Rectangle:
     def __init__(self, length, width):
         self.length = length

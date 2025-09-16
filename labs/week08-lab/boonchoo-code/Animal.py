@@ -21,7 +21,7 @@ class Dog(Animal):
         super().__init__(name, "Canine")  # Call parent constructor
         self.breed = breed
     
-    # Method overriding
+    # Method overriding คือการเขียน method ที่ซ้ำแม่
     def make_sound(self):
         print(f"{self.name} barks: Woof!")
     
@@ -32,7 +32,7 @@ class Dog(Animal):
 class Cat(Animal):
     
     def __init__(self, name, color):
-        super().__init__(name, "Feline")
+        super().__init__(name, "Feline") 
         self.color = color
     
     def make_sound(self):

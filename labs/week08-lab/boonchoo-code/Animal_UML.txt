@@ -1,0 +1,25 @@
+@startuml
+class Animal {
+    eat()
+    sleep()
+    make_sound()
+        name
+    species
+    is_alive
+    __init__()
+}
+class Dog {
+    make_sound()
+    fetch()
+        breed
+    __init__()
+}
+class Cat {
+    make_sound()
+    climb_tree()
+        color
+    __init__()
+}
+Animal <|-- Dog
+Animal <|-- Cat
+@enduml

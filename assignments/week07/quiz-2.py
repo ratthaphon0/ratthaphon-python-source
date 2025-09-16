@@ -36,7 +36,6 @@ class Student:
     def get_average_grade(self):
         if not self.grades:
             return 0
- 
         total = 0 
         for grade in self.grades:
             total += grade["grade"]
