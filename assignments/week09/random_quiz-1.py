@@ -1,3 +1,32 @@
+import random
+
+def simple_guessing_game():
+    random_number = random.randint(1,20)
+    
+    print("=== SIMPLE GUESSING GAME ===",
+          "\nGuess my number between 1 and 20!",
+          "\nYou have 6 attempts."
+          )
+    for attempt in range(1,7):
+        try:
+            guess_number = int(input(f"Attempt {attempt}/6 - Enter your guess: "))
+        except ValueError:
+            print("Please enter valid number")
+            continue
+        if guess_number == random_number:
+            print(f"Congratulations! You won in {attempt} attempts!")
+            break
+        elif guess_number > random_number:
+            print("Too high! Try again.")
+        else:
+            print("Too low! Try again.")
+    else:
+        print("You such a loser! Out of attempt!")
+            
+if __name__ == "__main__":
+    simple_guessing_game()  
+
+
 """
 Question 1: Beginner Number Guessing Game
 
