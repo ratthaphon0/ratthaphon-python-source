@@ -63,36 +63,36 @@
     "editor.fontFamily": "Cascadia Mono",
     "editor.suggest.showVariables": true,
     "editor.quickSuggestions": {
-        "other": false,
-        "comments": false,
-        "strings": false
+        "other": true,
+        "comments": true,
+        "strings": true
     },
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "on",
     "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": true
     },
 <<<<<<< HEAD
-    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.editor.enableAutoCompletions": true,
 >>>>>>> upstream/main
 =======
     // Prevents inline suggestions from appearing.
-    "editor.inlineSuggest.enabled": false,
+    "editor.inlineSuggest.enabled": true,
     // Disables the parameter hints that pop up when you type a function signature.
-    "editor.parameterHints.enabled": false,
+    "editor.parameterHints.enabled": true,
     // Turns off suggestions based on the words in your current document.
-    "editor.wordBasedSuggestions": "off",
+    "editor.wordBasedSuggestions": "on",
     // Prevents triggering suggestions automatically on characters like a dot (.).
-    "editor.suggestOnTriggerCharacters": false,
+    "editor.suggestOnTriggerCharacters": true,
     // Stops the suggestion window from appearing.
-    "editor.suggest.showWords": false,
+    "editor.suggest.showWords": true,
     // Prevents IntelliSense hovers from showing function/type definitions.
-    "editor.hover.enabled": false,
+    "editor.hover.enabled": true,
     // Disables GitHub Copilot suggestions.
-    "github.copilot.suggestions.enabled": false,
+    "github.copilot.suggestions.enabled": true,
     // Optional: Also disable Copilot for specific languages.
     "github.copilot.advanced": {
         "inlineSuggest.enableFor": {}
