@@ -43,7 +43,7 @@ nameFlag = True
 for char in name:
     #print(char, char.isalpha())
     if char.isalpha() or char == " ":
-        nameFlag = False
+        nameFlag = True
     else:
         nameFlag = False
         break
