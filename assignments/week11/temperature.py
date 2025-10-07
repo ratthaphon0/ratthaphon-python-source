@@ -22,4 +22,35 @@ Highest: 28 C
 Lowest: 19 C
 
 """
-    
+def get_temperatures():
+    """
+    temp_list = []
+    for i in range(7):
+        temp = float(input(f"Enter temperature for day {i+1}: "))
+        temp_list.append(temp)
+    """
+    temp_list = [20, 21, 22, 23.5, 24.5, 26, 27]
+    return temp_list
+
+
+def analyze_temps(temp_list):
+    average_temp = sum(temp_list) / len(temp_list)
+    highest_temp = max(temp_list)
+    lowest_temp = min(temp_list)
+    return average_temp, highest_temp, lowest_temp
+
+
+def display_analysis(avg, high, low):
+    print("Temperature Analysis for the Week:")
+    print(f"Average: {avg:.1f} C")
+    print(f"Highest: {high} C")
+    print(f"Lowest: {low} C")
+
+
+def main():
+    temps = get_temperatures()
+    avg, high, low = analyze_temps(temps)
+    display_analysis(avg, high, low)
+
+
+main()
